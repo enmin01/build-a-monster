@@ -53,7 +53,7 @@ class Monster extends Phaser.Scene {
         //
         // look in spritesheet_default.xml for the individual sprite names
         // You can also download the asset pack and look in the PNG/default folder.
-        /*my.sprite.righthand = this.add.sprite(this.rightHandX, this.rightHandY, "monsterParts", "arm_blueB.png");  
+        my.sprite.righthand = this.add.sprite(this.rightHandX, this.rightHandY, "monsterParts", "arm_blueB.png");  
         my.sprite.lefthand = this.add.sprite(this.leftHandX, this.leftHandY, "monsterParts", "arm_blueB.png"); 
         my.sprite.lefthand.flipX = true;
         my.sprite.rightleg = this.add.sprite(this.rightlegX, this.rightlegY, "monsterParts", "leg_blueD.png");  
@@ -83,19 +83,19 @@ class Monster extends Phaser.Scene {
             my.sprite.smilem.visible=false;
             my.sprite.dimeple.visible=true;
             my.sprite.smilee.visible=false;
-        });*/
+        });
         
         this.keyA=this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
         this.keyD=this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D);
         this.keyspace=this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
-        this.spaceship=this.add.sprite(this.bX,this.bY,"playerShip1_blue");
+        //this.spaceship=this.add.sprite(this.bX,this.bY,"playerShip1_blue");
         
         
     }
 
     update() {
-        let spaceship=this.spaceship;
-       /* let my = this.my;    // create an alias to this.my for readability
+       // let spaceship=this.spaceship;
+        let my = this.my;    // create an alias to this.my for readability
         if (this.keyA.isDown) {
             for (let part in my.sprite) {
                 my.sprite[part].x -= 1; 
@@ -108,8 +108,8 @@ class Monster extends Phaser.Scene {
                 my.sprite[part].x += 1; 
             }
         
-        }*/
-            if (this.keyA.isDown) {
+        }
+          /*  if (this.keyA.isDown) {
                this.spaceship.x-=5;
             
             }
@@ -124,7 +124,7 @@ class Monster extends Phaser.Scene {
         }
         this.bullets.bullet.forEach((bullet) => {
             bullet.y -= 5; 
-        });
+        });*/
 
         
 
